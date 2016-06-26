@@ -1,0 +1,13 @@
+table{ 
+      background:#00FFFF; 
+      border:1px solid #e7e7e7; 
+      margin:80px; 
+      padding:5px ;
+    } 
+ td{ 
+      background:rgb(128,128,128);   
+    } 
+
+input[type=text]{
+      box-sizing:border-box ;
+  }
