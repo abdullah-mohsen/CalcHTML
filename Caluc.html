@@ -2,46 +2,54 @@
 <html> 
   <head> 
       <title>My Calculator</title>
-      <link rel="stylesheet" type="text/css"  href="Styleshet.css">     
+      <link rel="stylesheet" type="text/css"  href="Styleshet.css">
+      <script type= "text/javascript">
+            function display(Num){ 
+                Caluclator.text1.value=Caluclator.text1.value + Num;
+            }
+
+            function clear1(){
+                Caluclator.text1.value='';
+            }
+
+            function getresu(){
+                var evalo = eval(Caluclator.text1.value);
+                Caluclator.text1.value= evalo;
+            }
+      </script>    
   </head> 
   <body> 
       <form name="Caluclator" > 
         <table> 
             <tr>   
-                   <td colspan=4> <input type="text" name="text"  placeholder="abdullah calc.."> </td>
-               <!-- text.value: وتضيفهم مع السابق text تجيب القيمه اللي -->
+                   <td colspan=4> <input type="text" name="text1"  placeholder="abdullah calc.."> </td>
+               <!-- text.value: ������� �� ������ text ���� ������ ���� -->
             </tr> 
             <tr> 
                   
-                <td><input name="zero" onclick="Caluclator.text.value+='0'"  type="button" value=" 0"></td> 
-                <td><input name="one" onclick="Caluclator.text.value+='1'"  type="button" value="1 "></td>
-                <td><input name="two" onclick="Caluclator.text.value+='2'" type="button" value="2 "></td> 
-                <td><input name="three" onclick="Caluclator.text.value+='3'"type="button" value="3 "> </td> 
+                <td><input name="zero" onclick="display(zero.value)"  type="button" value="0"></td> 
+                <td><input name="one" onclick="display(one.value)"  type="button" value="1"></td>
+                <td><input name="two" onclick="display(two.value)" type="button" value="2"></td> 
+                <td><input name="three" onclick="display(three.value)"type="button" value="3"> </td> 
                    
             </tr> 
             <tr>
-                   <td><input name="four" onclick="Caluclator.text.value+='4'" type="button" value="4 "></td>
-                   <td><input name="five" onclick="Caluclator.text.value+='5'" type="button" value="5 "></td> 
-                   <td><input name="six" onclick="Caluclator.text.value+='6'"  type="button" value="6 "></td> 
-                   <td><input name="seven" onclick="Caluclator.text.value+='7'" type="button" value="7 "></td>  
+                   <td><input name="four" onclick="display(four.value)" type="button" value="4"></td>
+                   <td><input name="five" onclick="display(five.value)" type="button" value="5"></td> 
+                   <td><input name="six" onclick="display(six.value)"  type="button" value="6"></td> 
+                   <td><input name="seven" onclick="display(seven.value)" type="button" value="7"></td>  
              </tr> 
-            <tr>
-     
-                  
-                  <td><input name="eight" onclick="Caluclator.text.value+='8'" type="button" value="8 "></td> 
-                  <td><input name="nine" onclick="Caluclator.text.value+='9'" type="button" value = "9 "></td>  
-                  <td><input name="clear" onClick="Caluclator.text.value=''" type="button" value="C " style="color:#FF8181"></td>  
-                  <td><input name="equals" onclick="Caluclator.text.value=eval(Caluclator.text.value)" type="button" value="= " style="color:#FF8181"></td>
-                  <!-- eval(Calc.text.value): take the input and calcuate it after that display in textField-->
+            <tr>  
+                  <td><input name="eight" onclick="display(eight.value)" type="button" value="8"></td> 
+                  <td><input name="nine" onclick="display(nine.value)" type="button" value = "9"></td>  
+                  <td><input name="clear" onClick="clear1()" type="button" value="C" style="color:#FF8181"></td>  
+                  <td><input name="equals" onclick="getresu()" type="button" value="= " style="color:#FF8181"></td>
            </tr>
-
           <tr>
-        
-                  
-                  <td><input name="minus" onclick="Caluclator.text.value+='-'" type="button" value=" - "  style="color:#FF8181"/></td>
-                  <td><input name="plus" onclick="Caluclator.text.value+='+'" type="button" value=" +" style="color:#FF8181"/></td>
-                  <td><input name="times" onclick="Caluclator.text.value+='*'" type="button" value=" * "  style="color:#FF8181"/></td>
-                  <td><input name="div"  onclick="Caluclator.text.value+='/'"  type="button" value=" / " style="color:#FF8181"/></td> 
+                  <td><input name="minus" onclick="display(minus.value)" type="button" value="-"  style="color:#FF8181"/></td>
+                  <td><input name="plus" onclick="display(plus.value)" type="button" value="+" style="color:#FF8181"/></td>
+                  <td><input name="mult" onclick="display(mult.value)" type="button" value="*"  style="color:#FF8181"/></td>
+                  <td><input name="div"  onclick="display(div.value)"  type="button" value="/" style="color:#FF8181"/></td> 
           
              </tr>
         </table> 
