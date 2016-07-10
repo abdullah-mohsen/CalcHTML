@@ -2,11 +2,9 @@
 <html> 
   <head> 
       <title>My Calculator</title>
+      <!--the style and script is in external file-->
       <link rel="stylesheet" type="text/css"  href="Styleshet.css">
-      <script src="myScript.js"> </script> 
-           
-           
-        
+      <script src="myScript.js"> </script>  
   </head> 
   <body> 
       <form name="Calculator" > 
@@ -35,7 +33,8 @@
                   <td><input name="btnclear" onClick="clearForm()" type="button" value="C" ></td>  
                   <td><input name="btnequals" onclick="getResult()" type="button" value="= "></td>
            </tr>
-          <tr>
+               <!-- under this button for opertion-->
+          <tr>      
                   <td><input name="btnminus" onclick="display(this.value)" type="button" value="-"  ></td>
                   <td><input name="btnplus" onclick="display(this.value)" type="button" value="+"></td>
                   <td><input name="btnmult" onclick="display(this.value)" type="button" value="*"></td>
