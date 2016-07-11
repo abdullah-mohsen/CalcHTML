@@ -8,6 +8,12 @@ table{
       background:rgb(128,128,128);   
     } 
 
-input[type=text]{
+input[type="text"]{
       box-sizing:border-box ;
+  }
+  .button{
+  background-color:  lightgreen;
+  color : white;
+
+
   }
