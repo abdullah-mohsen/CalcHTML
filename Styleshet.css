@@ -5,7 +5,8 @@ table{
       padding:5px ;
     } 
  td{ 
-      background:rgb(128,128,128);   
+
+   background:cyan;   
     } 
 
 input[type="text"]{
